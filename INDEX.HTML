@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> THE ROYAL STAY - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> THE ROYAL STAY</h1>
+<br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="destinations.html">Destinations</a>
+            
+            <a href="packages.html">Packages</a>
+            <a href="about.html">About</a>
+<a href="Contact.html">Contact us</a>
+            
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to The Royal Stay </h2>
+<body class="bg-white p-6">
+  <label for="searchOptions">Choose a  city:</label>
+  <select id="searchOptions">
+    <option value="">-- Select --</option>
+    <option value="delhi.html">Delhi</option>
+    <option value="gurugram.html">Gurugram</option>
+    <option value="faridabad.html">Faridabad</option>
+    <option value="jaipur.html">Jaipur</option>
+    <option value="mathura.html">Mathura</option>
+    <option value="ujjain.html">Ujjain</option>
+  </select>
+
+
+  <script>
+    function redirectToPage() {
+      const select = document.getElementById('searchOptions');
+      const url = select.value;
+
+      if (url) {
+        window.open(url, 'hotel.html'); // Open in a new tab
+      } else {
+        alert("Please select an option first.");
+      }
+    }
+  </script>
+
+    <label class="font-bold text-base">From</label>
+    <input
+      type="date"
+      class="border border-black rounded px-2 py-1 text-sm"
+    />
+    <label class="font-bold text-base">To</label>
+    <input
+      type="date"
+      class="border border-black rounded px-2 py-1 text-sm"
+    />&nbsp;&nbsp;
+    <button onclick="redirectToPage()">Search</button>
+        <p><b>Plan your perfect trip with us!</b></p>
+        <img src="pic.jpg" alt="Travel Banner" style="width: 100%;">
+<img src="pic2.jpg" alt="Travel Banner" style="width: 100%;">
+<img src="pic3.jpg" alt="Travel Banner" style="width: 100%;">
+    </main>
+    <footer>
+       <p>&copy; 2025 The Royal Stay</p>
+    </footer>
+</body>
+</html>
